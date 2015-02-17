@@ -63,6 +63,8 @@ class SelectColorTableViewController: UITableViewController {
             if let selectedRowIndexPath = tableView.indexPathForSelectedRow() {
                 let color = colors[selectedRowIndexPath.row]
                 colorViewController.color = color
+                // :-)
+                UIApplication.sharedApplication().keyWindow?.tintColor = color.color
             }
         }
     }
